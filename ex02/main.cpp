@@ -21,7 +21,7 @@ int main()
 
         // Проверка доступа к элементам массива
         std::cout << "Param array elements: ";
-        for (unsigned int i = 0; i < size; ++i)
+        for (int i = 0; i < paramArray.size(); ++i)
         {
             std::cout << paramArray[i] << " ";
         }
@@ -30,7 +30,7 @@ int main()
         // Проверка конструктора копирования
         Array<int> copyArray(paramArray);
         std::cout << "Copy array elements: ";
-        for (unsigned int i = 0; i < copyArray.size(); ++i)
+        for (int i = 0; i < copyArray.size(); ++i)
         {
             std::cout << copyArray[i] << " ";
         }
@@ -40,7 +40,7 @@ int main()
         Array<int> assignArray;
         assignArray = paramArray;
         std::cout << "Assign array elements: ";
-        for (unsigned int i = 0; i < assignArray.size(); ++i)
+        for (int i = 0; i < assignArray.size(); ++i)
         {
             std::cout << assignArray[i] << " ";
         }

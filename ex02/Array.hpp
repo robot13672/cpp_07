@@ -40,8 +40,6 @@ class Array
         Array() : elements(nullptr), len(0) {};
         Array(unsigned int size)
         {
-            if(size < 0)
-                throw std::bad_alloc();
             elements = new T[size]();
             this->len = size;
         }
